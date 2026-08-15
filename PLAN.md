@@ -89,12 +89,14 @@ trending-web/
         └── fetch.yml       # 定时任务（抓取+存JSON+归档+推送）
 ```
 
-## 定时计划
-- daily.json: 每天凌晨（UTC 16:00 = 北京时间 00:00）抓取
-- weekly.json: 每周一抓取
-- monthly.json: 每月 1 号抓取
-- 每次抓取同时归档历史快照 + 更新 index.json
-- weekly 抓取完成后调 Server酱 推送微信（周榜为主通知）
+## 定时计划（三个 date range 独立更新）
+- today（daily）：每天 UTC 16:00（北京 00:00）抓取 github.com/trending?since=daily
+- this week（weekly）：每周一 UTC 16:00 抓取 github.com/trending?since=weekly
+- this month（monthly）：每月 1 号 UTC 16:00 抓取 github.com/trending?since=monthly
+- 三个 cron 各自独立触发，互不干扰；周一且月初时三个分别跑
+- 每次抓取完整 25 个项目，归档历史快照 + 更新 index.json
+- weekly 抓取完成后调 Server酱 推送微信通知
+- 支持手动触发（workflow_dispatch）指定 date range
 
 ## 开发步骤
 1. 搭网页骨架（index.html + style.css + app.js）
