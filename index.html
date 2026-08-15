@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub 热榜</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="title">GitHub 热榜</h1>
+    <nav class="nav">
+      <button class="nav-btn active" data-view="current">当前榜</button>
+      <button class="nav-btn" data-view="history">历史榜</button>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section id="current-view" class="view active">
+      <div class="tabs">
+        <button class="tab-btn" data-period="daily">日榜</button>
+        <button class="tab-btn active" data-period="weekly">周榜</button>
+        <button class="tab-btn" data-period="monthly">月榜</button>
+      </div>
+      <div id="current-list" class="list"></div>
+    </section>
+
+    <section id="history-view" class="view">
+      <div class="tabs">
+        <button class="tab-btn active" data-hist-period="daily">日榜</button>
+        <button class="tab-btn" data-hist-period="weekly">周榜</button>
+        <button class="tab-btn" data-hist-period="monthly">月榜</button>
+      </div>
+      <div id="history-dates" class="date-list"></div>
+      <div id="history-list" class="list"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>数据来源 github.com/trending · 定时自动更新</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

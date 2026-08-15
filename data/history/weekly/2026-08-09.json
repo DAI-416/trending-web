@@ -1,0 +1,5 @@
+[
+  {"rank":1,"repo":"cathrynlavery/diagram-design","description":"29 editorial diagram types for Claude Code. Self-contained HTML + SVG.","language":"HTML","stars_period":9800,"stars_total":14500,"forks":820,"url":"https://github.com/cathrynlavery/diagram-design","fetched_at":"2026-08-09T00:00:00Z"},
+  {"rank":2,"repo":"PrimeIntellect-ai/prime-agent","description":"A self-improving RLM agent for coding workflows and long-running autonomous tasks.","language":"TypeScript","stars_period":7500,"stars_total":11200,"forks":1200,"url":"https://github.com/PrimeIntellect-ai/prime-agent","fetched_at":"2026-08-09T00:00:00Z"},
+  {"rank":3,"repo":"semantica-agi/semantica","description":"Graph-Native Infrastructure for Context and Accountable AI Systems","language":"Python","stars_period":3200,"stars_total":5600,"forks":540,"url":"https://github.com/semantica-agi/semantica","fetched_at":"2026-08-09T00:00:00Z"}
+]
