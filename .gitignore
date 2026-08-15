@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual env
+venv/
+.venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 大数据格式（按需取消注释，小数据集可纳入版本控制）
+# *.h5
+# *.parquet
+# *.pkl
+# *.pickle
+
+# 数据输出（按需调整——小结果文件可入库，大文件建议忽略）
+# output/
+# data/raw/
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# WorkBuddy 项目数据（记忆、技能等，不入库）
+.workbuddy/
+
+# Env / logs
+.env
+.env.local
+*.log
